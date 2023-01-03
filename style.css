@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Acumin Pro;
+}
+body {
+  background-color: #f3f3f3;
+}
+@font-face {
+  font-family: "Acumin Pro";
+  src: local(AcuminPro), url(/fonts/acumin-pro-cufonfonts/Acumin-RPro.otf);
+}
+
+.navbar {
+  display: flex;
+  height: 10vh;
+  background-color: #00695c;
+  color: #fff;
+}
+.navbar-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-menu a:hover {
+  color: #dadada;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+}
+.inputs input {
+  width: 90%;
+  height: 40px;
+  outline: none;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #323232;
+  transition: 0.5s;
+  border: none;
+  padding-left: 10px;
+  border-bottom: 1px solid #000;
+}
+.inputs input:hover {
+  transition: 0.5s;
+  border-bottom: 2px solid #00695c;
+}
+.inputs button {
+  width: 90%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #00695c;
+  color: #fff;
+  font-size: 19px;
+  transition: 0.5s;
+  margin: 10px;
+}
+.inputs button:hover {
+  background-color: #fff;
+  border: 2px solid #00695c;
+
+  transition: 0.5s;
+  color: #198754;
+  cursor: pointer;
+}
+.controller-modal {
+  display: none;
+}
+.pesquisar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  flex-wrap: wrap;
+}
+.pesquisar input {
+  border: none;
+  border-bottom: 3px solid #323232;
+  width: 300px;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 15px;
+}
+.pesquisar button {
+  margin-left: 20px;
+  background-color: #198754;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+.table {
+  margin: 0 130px 0 130px;
+}
+.modal-container {
+ 
+
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  display: none;
+}
+
+.modalSave {
+  background-color: #ffffff;
+  width: 300px;
+  height: 120px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
